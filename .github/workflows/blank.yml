@@ -1,0 +1,14 @@
+name: Tag Push
+
+on:
+  push:
+    tags:
+      - '**'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo hello
+        run: |
+          echo "Hello World"
+    
